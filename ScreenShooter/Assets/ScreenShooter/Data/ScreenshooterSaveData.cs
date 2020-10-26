@@ -5,7 +5,6 @@ using System.Linq;
 using System.IO;
 using UnityEngine;
 using UnityEditor;
-using Polyglot;
 
 [Serializable]
 public class ScreenshooterSaveData {
