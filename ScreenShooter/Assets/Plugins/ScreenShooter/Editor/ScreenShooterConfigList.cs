@@ -19,7 +19,6 @@ public static class ScreenShooterConfigList {
 
 			const float singleWidth = 10;
 
-
 			var config = configsList[index];
 			var nameWidth = position.width - space * 6 - enabledWidth - cameraWidth - textWidth - sizeWidth * 2 - multWidth - uiWidth - singleWidth * 21;
 			if (nameWidth < minNameWidth)

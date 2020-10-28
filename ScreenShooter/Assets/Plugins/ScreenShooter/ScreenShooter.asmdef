@@ -1,5 +1,5 @@
 {
-    "name": "GameTemplate.ScreenShooter",
+    "name": "ScreenShooter",
     "references": [
         "GUID:46cc2325ddc967847a6e9ca3f6ebd47f",
         "GUID:900335979416f53469b06aabef8b32d8"
