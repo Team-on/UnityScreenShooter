@@ -12,8 +12,8 @@ using Polyglot;
 public static class ScreenshotTakerEditor {
 	public static bool isScreenshotQueueEmpty => queuedScreenshots.Count == 0;
 
-	static object SizeHolder { get { return ReflectionEx.GetType("GameViewSizes").FetchProperty("instance").FetchProperty("currentGroup"); } }
-	static EditorWindow GameView { get { return EditorWindow.GetWindow(ReflectionEx.GetType("GameView")); } }
+	static object SizeHolder { get { return GetWindowType("GameViewSizes").FetchProperty("instance").FetchProperty("currentGroup"); } }
+	static EditorWindow GameView { get { return EditorWindow.GetWindow(GetWindowType("GameView")); } }
 
 	static Queue<ScreenshotData> queuedScreenshots = new Queue<ScreenshotData>();
 
@@ -228,7 +228,7 @@ public static class ScreenshotTakerEditor {
 	}
 
 	private static object GetFixedResolution(int width, int height) {
-		object sizeType = Enum.Parse(ReflectionEx.GetType("GameViewSizeType"), "FixedResolution");
-		return ReflectionEx.GetType("GameViewSize").CreateInstance(sizeType, width, height, "MSC_temp");
+		object sizeType = Enum.Parse(GetWindowType("GameViewSizeType"), "FixedResolution");
+		return GetWindowType("GameViewSize").CreateInstance(sizeType, width, height, "MSC_temp");
 	}
 }

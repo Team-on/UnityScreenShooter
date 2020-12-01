@@ -4,7 +4,7 @@ using UnityEditor;
 
 namespace Screenshooter.Utils {
 	public static class ReflectionEx {
-		public static Type GetType(string type) {
+		public static Type GetWindowType(string type) {
 			return typeof(EditorWindow).Assembly.GetType("UnityEditor." + type);
 		}
 
