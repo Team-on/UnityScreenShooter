@@ -11,7 +11,7 @@ public class ScreenShooterWindow : EditorWindow {
 	Vector2 scrollPos;
 	ReorderableList _list;
 
-	[MenuItem("Window/Custom/Screen Shooter &s")]
+	[MenuItem("Window/Screen Shooter &s")]
 	public static void ShowWindow() {
 		GetWindow(typeof(ScreenShooterWindow), false, "Screen Shooter", true);
 	}
