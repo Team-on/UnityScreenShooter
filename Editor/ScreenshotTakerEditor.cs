@@ -44,6 +44,9 @@ public static class ScreenshotTakerEditor {
 	}
 
 	public static void CaptureScreenshootQueueAllLanguages(List<ScreenshotData> data, string outputFolder) {
+		if (!Directory.Exists(outputFolder))
+			Directory.CreateDirectory(outputFolder);
+
 #if POLYGLOT
 		usedLanguage = Localization.Instance.SelectedLanguage;
 #endif
