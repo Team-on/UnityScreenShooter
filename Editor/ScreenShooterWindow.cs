@@ -58,6 +58,15 @@ public class ScreenShooterWindow : EditorWindow {
 			ScreenshotTaker.TakeScreenshot(data.outputFolder);
 		}
 
+		EditorGUILayout.Space();
+		EditorGUILayout.Space();
+		if (GUILayout.Button("Add all sizes to Game window sizes selector")) {
+			ScreenshotTakerEditor.AddAllSizes(data.screenshoots);
+		}
+		if (GUILayout.Button("Clear all Game window sizes selector")) {
+			ScreenshotTakerEditor.ClearAllSizes();
+		}
+
 		GUI.enabled = true;
 		EditorGUILayout.EndScrollView();
 	}

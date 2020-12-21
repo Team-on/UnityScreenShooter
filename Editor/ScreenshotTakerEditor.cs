@@ -28,6 +28,21 @@ public static class ScreenshotTakerEditor {
 #endif
 	static string usedOutputFolder = "";
 
+	public static void AddAllSizes(List<ScreenshotData> datas) {
+		foreach (ScreenshotData data in datas) {
+			if (!data.isEnabled)
+				continue;
+			object customSize = GetFixedResolution((int)data.resolution.x, (int)data.resolution.y, data.name);
+			SizeHolder.CallMethod("AddCustomSize", customSize);
+		}
+	}
+
+	public static void ClearAllSizes() {
+		int buildin = (int)SizeHolder.CallMethod("GetBuiltinCount");
+		for (int i = buildin; i < (int)SizeHolder.CallMethod("GetTotalCount");)
+			SizeHolder.CallMethod("RemoveCustomSize", buildin);
+	}
+
 	public static void CaptureScreenshootQueueAllLanguages(List<ScreenshotData> data, string outputFolder) {
 #if POLYGLOT
 		usedLanguage = Localization.Instance.SelectedLanguage;
@@ -227,8 +242,8 @@ public static class ScreenshotTakerEditor {
 		}
 	}
 
-	private static object GetFixedResolution(int width, int height) {
+	private static object GetFixedResolution(int width, int height, string name = "MSC_temp") {
 		object sizeType = Enum.Parse(GetWindowType("GameViewSizeType"), "FixedResolution");
-		return GetWindowType("GameViewSize").CreateInstance(sizeType, width, height, "MSC_temp");
+		return GetWindowType("GameViewSize").CreateInstance(sizeType, width, height, name);
 	}
 }
