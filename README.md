@@ -21,8 +21,7 @@ openupm add com.teamon.screenshooter
 
 ### (For Unity 2018.3 or later) Using Git
 Find the manifest.json file in the Packages folder of your project and add a line to `dependencies` field.
-* Major version: ![](https://img.shields.io/github/v/release/mob-sakai/SubAssetEditor)  
-`"com.teamon.screenshooter": "https://github.com/eam-on/UnityScreenShooter.git"`
+`"com.teamon.screenshooter": "https://github.com/Team-on/UnityScreenShooter.git"`
 Or, use [UpmGitExtension](https://github.com/mob-sakai/UpmGitExtension) to install and update the package.
 
 #### For Unity 2018.2 or earlier
