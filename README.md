@@ -16,7 +16,7 @@ Also provide API to capture screenshots runtime
 This package is available on [OpenUPM](https://openupm.com).  
 You can install it via [openupm-cli](https://github.com/openupm/openupm-cli).  
 ```
-openupm add com.teamon.screenshooter.
+openupm add com.teamon.screenshooter
 ```
 
 ### (For Unity 2018.3 or later) Using Git
