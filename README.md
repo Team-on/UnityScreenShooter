@@ -6,7 +6,7 @@ Integrated with [Polyglot Tool](https://assetstore.unity.com/packages/tools/gui/
 Also provide API to capture screenshots runtime  
 
 ## Editor window & how to use it
-![Main screen](HelpScreenshots/1.png)  
+![Main screen](https://github.com/Team-on/UnityScreenShooter/blob/main/HelpScreenshots/1.png)  
 Here are main(and only one) screenshoter window. Open it in *Windows/ScreenShooter* or *Alt+S*.
  - 1) It's your screenshot secuence. Here you can setup this parameters:
      - checkmark is sequence enabled
@@ -27,12 +27,12 @@ Here are main(and only one) screenshoter window. Open it in *Windows/ScreenShoot
 
 ---------------------
 
-![Pre-defined settings](HelpScreenshots/2.png)  
+![Pre-defined settings](https://github.com/Team-on/UnityScreenShooter/blob/main/HelpScreenshots/2.png)  
 Asset already have defined sizes for some polular devises. You can select them, or create custom setup
 
 ---------------------
 
-![Auto sizes](HelpScreenshots/3.png) 
+![Auto sizes](https://github.com/Team-on/UnityScreenShooter/blob/main/HelpScreenshots/3.png) 
 Here are example what buttons ** all sizes to Game window sizes selector** and **Clear all Game window sizes selector** do
 
 ## Installation
