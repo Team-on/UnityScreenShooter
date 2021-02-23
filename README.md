@@ -27,11 +27,12 @@ Here are main(and only one) screenshoter window. Open it in *Windows/ScreenShoot
 
 ---------------------
 
+### Pre-defined settings
 ![Pre-defined settings](HelpScreenshots/2.png)  
 Asset already have defined sizes for some polular devises. You can select them, or create custom setup
 
----------------------
 
+### Auto sizes
 ![Auto sizes](HelpScreenshots/3.png) 
 Here are example what buttons ** all sizes to Game window sizes selector** and **Clear all Game window sizes selector** do
 
@@ -48,13 +49,13 @@ Find the manifest.json file in the Packages folder of your project and add a lin
 `"com.teamon.screenshooter": "https://github.com/Team-on/UnityScreenShooter.git"`
 Or, use [UpmGitExtension](https://github.com/mob-sakai/UpmGitExtension) to install and update the package.
 
-#### For Unity 2018.2 or earlier
+### For Unity 2018.2 or earlier
 1. Download a source code zip this page
 2. Extract it
 3. Import it into the following directory in your Unity project
    - `Packages` (It works as an embedded package. For Unity 2018.1 or later)
    - `Assets` (Legacy way. For Unity 2017.1 or later)
    
-#### From Unity Asset Store
+### From Unity Asset Store
 1. https://assetstore.unity.com/packages/slug/188939
 2. Add it to project as usual
