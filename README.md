@@ -25,9 +25,12 @@ Here are main(and only one) screenshoter window. Open it in *Windows/ScreenShoot
  - 5.1) **Add all sizes to Game window sizes selector** - Add all screenshot sizes to *Game view Resolution selection*, so you can test game with them all
  - 5.2) **Clear all Game window sizes selector** - Clear *Game view Resolution selection*
 
+---------------------
 
 ![Pre-defined settings](HelpScreenshots/2.jpg)  
 Asset already have defined sizes for some polular devises. You can select them, or create custom setup
+
+---------------------
 
 ![Auto sizes](HelpScreenshots/3.jpg) 
 Here are example what buttons ** all sizes to Game window sizes selector** and **Clear all Game window sizes selector** do
