@@ -5,6 +5,8 @@
 Integrated with [Polyglot Tool](https://assetstore.unity.com/packages/tools/gui/polyglot-tool-131560?_ga=2.85337567.750031523.1612646196-741310434.1607024629) to capture screenshots with all avaliabled languages. Can work without *Polyglot* too.  
 Also provide API to capture screenshots runtime  
 
+Also it nicely integrated with [Team-on Unity game template](https://github.com/Team-on/UnityGameTemplate)
+
 ## Editor window & how to use it
 ![Main screen](HelpScreenshots/1.png)  
 Here are main(and only one) screenshoter window. Open it in *Windows/ScreenShooter* or *Alt+S*.
